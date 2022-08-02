@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>porto</title>
+        <link rel="stylesheet" href="porto.css">
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">team</a></li>
+            </ul>
+        </nav>
+
+        <div id="konten">
+            <section id="konten-info">
+                <img src="rznst.png" alt="gambar dari file">
+
+                <div class="penjelasan">
+                    <div class="penjelasan-text">
+                        <h1 id="output-nama">Reza Nasution</h1>
+                        <p id="output-role">Front End Developer</p>
+                    </div>
+                    <div class="penjelasan-button">
+                        <button id="btn-kontak">kontak</button>
+                        <button id="btn-resume" onclick="hideShowForm()">resume</button>
+                    </div>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Availability</th>
+                        <td id="output-availability">Full Time</td>
+                    </tr>
+                    <tr>
+                        <th>Usia</th>
+                        <td id="output-usia">20</td>
+                    </tr>
+                    <tr>
+                        <th>Lokasi</th>
+                        <td id="output-lokasi">Bogor</td>
+                    </tr>
+                    <tr>
+                        <th>Pengalaman</th>
+                        <td id="output-pengalaman">1 tahun</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td id="output-email">rezanst@gmail.com</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="konten-form">
+                <form onsubmit="event.preventDefault(); updateData()">
+                    <label>Nama</label>
+                    <input type="text" id="input-nama">
+                    <br>
+                    <label>Role</label>
+                    <input type="text" id="input-role">
+                    <br>
+                    <label>Availability</label>
+                    <input type="text" id="input-availability">
+                    <br>
+                    <label>Usia</label>
+                    <input type="number" id="input-usia">
+                    <br>
+                    <label>Lokasi</label>
+                    <input type="text" id="input-lokasi">
+                    <br>
+                    <label>Pengalaman</label>
+                    <input type="text" id="input-pengalaman">
+                    <br>
+                    <label>Email</label>
+                    <input type="email" id="input-email">
+                    <br>
+                    <input type="submit" value="Submit" class="btn-hijau">
+                </form>
+            </section>
+        </div>
+
+        <script src="porto.js"></script>
+    </body>
+</html>
